@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { ADD_RING } from '../redux/actionTypes';
+import { ADD_RING, DELETE_RING } from '../redux/actionTypes';
 import Ring from './ring';
 
 const Vessel: React.FC = () => {
@@ -24,3 +24,26 @@ const AddRing: React.FC = () => {
     dispatch({ type: ADD_RING, ring: ring });
 
 }
+
+const deleteRing = () => {
+    dispatchEvent({ type: DELETE_RING, ringId: Object.keys(rings).length -1});
+}
+
+return (
+    <div>
+        <h3>Vessel Configuration</h3>
+        <div>
+
+            Rings: <button onClick={deleteRing}>-</button>
+            <input id='rings' value=
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+)
