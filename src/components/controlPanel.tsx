@@ -1,7 +1,7 @@
 import React from 'react';
 import Vessel from './vessel';
 
-const ControlPanel: React.FC = props => {
+const ControlPanel: React.FC = () => {
     return(
         <div className = "control-panel">
             <Vessel />
