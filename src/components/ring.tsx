@@ -35,6 +35,18 @@ const Ring: React.FC = props => {
         dispatch({ type: UPDATE_RING, ring: ring});
     }
 
+    return (
+        <div className="ring-details">
+
+            <div className="ring-id">{ring.id + 1}</div>
+            <div className="ring-segments"><input onChange={updateSegments} value={ring.segments} /></div>
+            <div className="ring-outer-diameter"><input onChange={updateOuterDiameter} value={ring.outerDiameter} /></div>
+            <div className="ring-width"><input onChange={updateWidth} value={ring.width} /></div>
+            <div className="ring-height"><input onChange={updateHeight} value={ring.height} /></div>
+            <div className="ring-offset"><input onChange={updateOffset} value={ring.offset} /></div>
+
+        </div>
+    );
 }
 
-
+export default Ring;
