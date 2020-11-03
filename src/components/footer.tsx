@@ -1,10 +1,8 @@
 import React from 'react';
 
-const Footer: React.FC = props => {
+const Footer: React.FC = () => {
     return (
-        <footer>
-
-        </footer>
+        <footer></footer>
     );
 };
 

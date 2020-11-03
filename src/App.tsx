@@ -14,12 +14,12 @@ const App = () => {
         <Provider store={store}>
             {/* <Auth />  */}
             {/* <Login /> */}
-            <Header />
+            <Header /> 
             
-            <Visualizer />
-            <ControlPanel />
-            <Footer />
-        </Provider>
+            <Visualizer /> 
+            <ControlPanel /> 
+            <Footer /> 
+        </Provider> 
     );
 }
 

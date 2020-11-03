@@ -2,7 +2,7 @@ import React from 'react';
 import { LOGIN } from '../redux/actionTypes';
 import Login from './login';
 
-const Header: React.FC = props => {
+const Header: React.FC = () => {
     return (
         <header>
             <Login>
