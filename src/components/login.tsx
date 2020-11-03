@@ -26,3 +26,4 @@ const Logout: React.FC = () => {
     );
 };
 
+export default Login;
