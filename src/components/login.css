@@ -1,0 +1,18 @@
+
+
+.Login {
+    float: right;
+    margin: 10px;
+}
+
+#Logout {
+    margin: 10px;
+    padding: 10px;
+    align-content: center;
+}
+
+#Cancel {
+    margin: 10px;
+    padding: 10px;
+    align-content: center;
+}
