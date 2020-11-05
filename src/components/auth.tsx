@@ -35,3 +35,5 @@ if(Auth.isAuthenticated) {
         </div>
     );
 }
+
+export default Auth;
