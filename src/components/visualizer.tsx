@@ -41,6 +41,26 @@ const onSceneReady = (scene) => {
         let ring = rings[key];
         let segments = GetSegments(ring, aggregateHeight) 
         aggregateHeight += ring.height;
-        
-    })
+        segments.forEach(s => {
+            let polygon = MeshBuilder.ExtrudePolygon(s.id, { shape: s.vectors, depth: ring.height}, scene);
+            polygon.enableEdgesRendering();
+            polygon.edgesWidth = 4.0;
+            polygon.edgesColor = new Color4(0, 0, 0, 1);
+            polygon.rotate(Axis.Y, s.offset);
+            polygon.movePOV(0, aggregateHeight, 0);
+        });
+    });
 }
+
+let rings;
+
+const Visualizer = () => {
+    rings = useSelector(state => state.vessel.rings);
+    let SceneComponentKey = new Date().getTime();
+
+    return (
+        <SceneComponent key={SceneComponentKey} antialias onSceneReady={onSceneReady} className='visualizer' />
+    );
+}
+
+export default Visualizer;
