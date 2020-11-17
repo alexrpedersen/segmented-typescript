@@ -2,6 +2,10 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { UPDATE_RING } from '../redux/actionTypes';
 
+interface TemporaryName {
+    
+}
+
 const Ring: React.FC = props => {
     const dispatch = useDispatch();
 

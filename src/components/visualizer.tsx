@@ -3,9 +3,6 @@ import { useSelector } from 'react-redux';
 import { ArcRotateCamera, Vector3, HemisphericLight, Axis, MeshBuilder, Color4 } from '@babylonjs/core';
 import SceneComponent from 'babylonjs-hook';
 
-interface ThisWillBeAPlaceHolder {
-    
-}
 
 const GetSegments: React.FC = (ring, aggregateHeight) => {
 
